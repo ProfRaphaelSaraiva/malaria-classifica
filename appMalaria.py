@@ -31,6 +31,8 @@ def carrega_imagem():
 
     return  image
 
+def previsao (interpreter, image):   
+
 def main():
 
   st.set_page_config(
@@ -45,7 +47,11 @@ def main():
 
   #carregar a imagem
 image = carrega_imagem()
+
   #classifica
+  if image is not None:
+  previsao(intrepreter, image)
+  
 
 
   if __name__== "__main__":
